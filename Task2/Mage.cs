@@ -25,7 +25,7 @@ class Mage : Enemy
     }  */
 
     public override bool CheckRange(Character target)
-    {
+    { 
 
         if ((this.x == target.y))
         {
