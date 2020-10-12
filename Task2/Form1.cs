@@ -148,7 +148,7 @@ namespace Task2
                     bool checkDead = game.getMap.getEnemies[i].IsDead();
 
                     if (checkDead == true)
-                    {
+                    { 
 
                         game.getMap.getTiles[game.getMap.getEnemies[i].x, game.getMap.getEnemies[i].y] = new EmptyTile(game.getMap.getEnemies[i].x, game.getMap.getEnemies[i].y);
 
