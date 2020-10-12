@@ -19,10 +19,6 @@ class Mage : Enemy
         return Movement.none;
     }
 
-  /*  private int DistanceTo(Character target)
-    {
-       
-    }  */
 
     public override bool CheckRange(Character target)
     { 
