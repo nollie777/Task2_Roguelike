@@ -22,9 +22,24 @@ class Mage : Enemy
 
     public override bool CheckRange(Character target)
     { 
-        if ((this.x == target.y))
+        if ((this.x++ == target.x && this.y == target.y) || (this.x-- == target.x && this.y == target.y)) //check x, same y
         {
            
+            return true;
+        }
+        if ((this.x == target.x && this.y++ == target.y) || (this.x == target.x && this.y-- == target.y)) //check y, same x
+        {
+
+            return true;
+        }
+        if ((this.x++ == target.x && this.y++ == target.y) || (this.x-- == target.x && this.y-- == target.y)) //check x & y
+        {
+
+            return true;
+        }
+        if ((this.x++ == target.x && this.y-- == target.y) || (this.x-- == target.x && this.y++ == target.y)) //check x & y
+        {
+
             return true;
         }
 

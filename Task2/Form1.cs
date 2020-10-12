@@ -40,11 +40,11 @@ namespace Task2
                 game.MovePlayer(GameEngine.Movement.left);
             }
 
-            lblPlayer.Text = game.getMap.getPlayer.ToString();
-
             moveGoblins();
 
             mageAttack();
+
+            lblPlayer.Text = game.getMap.getPlayer.ToString();
 
             lblmap.Text = game.ToString();
 
@@ -60,11 +60,11 @@ namespace Task2
 
             }
 
-            lblPlayer.Text = game.getMap.getPlayer.ToString();
-
             moveGoblins();
 
             mageAttack();
+
+            lblPlayer.Text = game.getMap.getPlayer.ToString();
 
             lblmap.Text = game.ToString();
 
@@ -79,12 +79,12 @@ namespace Task2
                 game.MovePlayer(GameEngine.Movement.down);
 
             }
-
-            lblPlayer.Text = game.getMap.getPlayer.ToString();
-
+           
             moveGoblins();
 
             mageAttack();
+
+            lblPlayer.Text = game.getMap.getPlayer.ToString();
 
             lblmap.Text = game.ToString();
 
@@ -100,11 +100,11 @@ namespace Task2
                 
             }
 
-            lblPlayer.Text = game.getMap.getPlayer.ToString();
-
             moveGoblins();
 
             mageAttack();
+
+            lblPlayer.Text = game.getMap.getPlayer.ToString();
 
             lblmap.Text = game.ToString();
 
@@ -127,7 +127,7 @@ namespace Task2
 
                     checkRannge = true;
 
-                    lblPlayer.Text += game.getMap.getEnemies[i];
+                    actionlist.Text += game.getMap.getEnemies[i];
 
                 }
 
